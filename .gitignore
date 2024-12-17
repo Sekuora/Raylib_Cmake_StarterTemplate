@@ -1,4 +1,5 @@
 /out
+.vessel/
 bin/
 build/
 /.vs

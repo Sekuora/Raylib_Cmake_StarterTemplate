@@ -8,6 +8,7 @@ project(RaylibDefaultProject)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(FETCHCONTENT_BASE_DIR "${CMAKE_SOURCE_DIR}/.vessel/libs")
 
 include(FetchContent)
 
@@ -25,8 +26,19 @@ FetchContent_Declare(
 ### Make External Libraries Available ###
 FetchContent_MakeAvailable(raylib)
 
-# Add the executable and source files
-add_executable(RaylibDefaultProject "RaylibDefaultProject.cpp" "RaylibDefaultProject.h")
+# Set the name of your game and replace the default "Game" folder name accordingly.
+set(GAME_NAME "Game")
+
+# Include directories for header files - place your headers in this path to separate them from source.
+include_directories("${PROJECT_SOURCE_DIR}/${GAME_NAME}/include")
+
+
+# Add the executables
+add_executable(${CMAKE_PROJECT_NAME}
+"${PROJECT_SOURCE_DIR}/${GAME_NAME}/source/main.cpp"
+)
+
+
 
 ### Link Exernal Libraries ###
 target_link_libraries(RaylibDefaultProject PRIVATE raylib)

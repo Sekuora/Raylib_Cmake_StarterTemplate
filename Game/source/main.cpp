@@ -1,7 +1,7 @@
 ﻿// RaylibDefaultProject.cpp : Defines the entry point for the application.
 
 
-#include "RaylibDefaultProject.h"
+#include "main.h"
 #include "raylib.h"
 
 using namespace std;
