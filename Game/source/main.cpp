@@ -1,4 +1,4 @@
-﻿// RaylibDefaultProject.cpp : Defines the entry point for the application.
+﻿// Main.cpp : Defines the entry point for the application.
 
 
 #include "main.h"
@@ -13,7 +13,10 @@ int main(void)
     const int screenWidth = 800;
     const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    InitWindow(screenWidth, screenHeight, "raylib default template");
+    
+    Image gameIcon = LoadImage("resources/icon/fofaya.png");
+    SetWindowIcon(gameIcon);
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -32,7 +35,7 @@ int main(void)
 
         ClearBackground(RAYWHITE);
 
-        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        DrawText("Raylib is working!", 190, 200, 20, LIGHTGRAY);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
