@@ -10,7 +10,7 @@ int main(void)
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    const int screenWidth = 800;
+    const int screenWidth = 450;
     const int screenHeight = 450;
 
     InitWindow(screenWidth, screenHeight, "raylib default template");
@@ -33,9 +33,9 @@ int main(void)
         //----------------------------------------------------------------------------------
         BeginDrawing();
 
-        ClearBackground(RAYWHITE);
+        ClearBackground(BLACK);
 
-        DrawText("Raylib is working!", 190, 200, 20, LIGHTGRAY);
+        DrawText("Raylib is working!", 0, 0, 20, LIGHTGRAY);
 
         EndDrawing();
         //----------------------------------------------------------------------------------

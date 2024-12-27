@@ -1,8 +1,9 @@
 /out
 .vessel/
+/packages
 bin/
-build/
 /.vs
+build/
 .idea/
 CMakeSettings.json
 Makefile
