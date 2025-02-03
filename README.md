@@ -14,8 +14,9 @@ Modify the Cmakelists file to suit your needs.
 CMakePresets.json comes with various compilation options by default depending on your system.
 
 ## Features to be implemented in the future
-Multiplatform support settings for compilation.
-Multi CMakelists structure for better control of the project.
-Better project management (issues posting template, discussions board, guidelines for collaboration and pull requests, etc.)
+- Multiplatform support settings for compilation.
+- Multi CMakelists structure for better control of the project.
+- Better project management (issues posting template, discussions board, guidelines for collaboration and pull requests, etc.)
+
 ---
 Feel free to post any issues on the issues tab.
